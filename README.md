@@ -11,4 +11,4 @@ docker compose up
 ```
 
 para verificar as rotas disponíveis pode se utilizar a coleção do insomnia InsomniaCollection.json presente na raiz do repositório ou acessar o link do swagger da api através do link:
-(swagger)[http://localhost:5001/docs]
+[swagger](http://localhost:5001/docs)

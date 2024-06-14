@@ -63,4 +63,4 @@ def update_blog_post(id: int,blogPost : BlogPost):
         return HTTPException(500,f'{e}')
 
 if __name__ == '__main__':
-    uvicorn.run(app,port=5001)
+    uvicorn.run(app,port=5001,host="0.0.0.0")
