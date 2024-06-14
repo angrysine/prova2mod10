@@ -1,0 +1,18 @@
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: backend
+    restart: on-failure
+    ports:
+      - "5001:5001"
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "8000:80"
+    depends_on:
+      - backend
+    restart: on-failure
